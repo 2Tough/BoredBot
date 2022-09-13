@@ -6,6 +6,6 @@ document.getElementById("get-activity").addEventListener("click", function() {
       .then(data => {
         document.getElementById("activity").textContent = data.activity
         document.getElementById("title").textContent = `🦾 ${data.type}Bot🦿`
-        console.log(data)
+        document.body.classList.add("fun")
       })
   })
